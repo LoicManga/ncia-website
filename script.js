@@ -1,12 +1,3 @@
-// Smooth Scroll
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', function (e) {
-    e.preventDefault();
-    const targetId = this.getAttribute('href');
-    document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
-  });
-});
-
 // Navbar shrink on scroll
 const header = document.querySelector('.header');
 window.addEventListener('scroll', () => {
@@ -18,28 +9,43 @@ window.addEventListener('scroll', () => {
 });
 
 // Fade-in on scroll
-const faders = document.querySelectorAll('.section');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, {
-  threshold: 0.1
-});
+const faders = document.querySelectorAll('.fade-in');
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.1 }
+);
 
-faders.forEach(section => {
-  section.classList.add('fade-in');
+faders.forEach((section) => {
   observer.observe(section);
 });
 
-// Basic Search Alert
-const searchBox = document.querySelector('.search-box input');
-searchBox.addEventListener('keyup', function (e) {
-  if (e.key === 'Enter') {
-    alert(`Searching for: ${searchBox.value}`);
-    searchBox.value = '';
+// Search functionality
+const searchInput = document.querySelector('#searchInput');
+if (searchInput) {
+  searchInput.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter' && searchInput.value.trim()) {
+      alert(`Searching for: ${searchInput.value}`);
+      searchInput.value = '';
+    }
+  });
+}
+
+// Mock dashboard updates
+const updateDashboard = () => {
+  const activeThreats = document.querySelector('#active-threats');
+  const globalIncidents = document.querySelector('#global-incidents');
+  if (activeThreats && globalIncidents) {
+    setInterval(() => {
+      activeThreats.textContent = Math.floor(Math.random() * 100);
+      globalIncidents.textContent = Math.floor(Math.random() * 200);
+    }, 5000);
   }
-});
+};
+updateDashboard();
