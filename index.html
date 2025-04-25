@@ -4,108 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NCIA - National Cyber Intelligence Agency</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header" id="navbar">
+    <header class="header">
         <div class="container nav-container">
-            <h1 class="logo">NCIA</h1>
+            <a href="index.html" class="logo">
+                <img src="images/ncia-logo.png" alt="NCIA Logo" class="logo-img">
+            </a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
             <div class="search-box">
-                <input type="text" placeholder="Search...">
+                <input type="text" placeholder="Search..." id="searchInput">
                 <i class="fas fa-search"></i>
             </div>
         </div>
     </header>
 
-    <section id="home" class="hero-section">
+    <section class="hero">
         <div class="container hero-content">
-            <h2>Artificial Intelligence for National Cyber Defense</h2>
-            <p>Securing the future through innovation and intelligence.</p>
-            <a href="#contact" class="btn-primary">Get in Touch</a>
+            <h1>National Cyber Intelligence Agency</h1>
+            <p>Securing the digital frontiers of the nation through advanced cyber operations and intelligence.</p>
+            <a href="contact.html" class="btn-primary">Get in Touch</a>
         </div>
     </section>
 
-    <section id="about" class="section fade-in">
+    <section class="threat-alerts fade-in">
         <div class="container">
-            <h2>About NCIA</h2>
-            <p>The National Cyber Intelligence Agency (NCIA) provides premier cybersecurity solutions and intelligence gathering to protect national interests worldwide.</p>
+            <h2>Latest Threat Alerts</h2>
+            <div class="alert-grid">
+                <div class="alert-card">
+                    <h3>Ransomware Surge Detected</h3>
+                    <p>Critical infrastructure targeted by new ransomware strain. NCIA is actively monitoring.</p>
+                    <span class="alert-date">April 24, 2025</span>
+                </div>
+                <div class="alert-card">
+                    <h3>Phishing Campaign Identified</h3>
+                    <p>Widespread phishing attempts targeting government agencies. Countermeasures deployed.</p>
+                    <span class="alert-date">April 23, 2025</span>
+                </div>
+                <div class="alert-card">
+                    <h3>DDoS Attack Neutralized</h3>
+                    <p>Major DDoS attack on financial sector thwarted by NCIA defenses.</p>
+                    <span class="alert-date">April 22, 2025</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="services" class="section fade-in">
+    <section class="dashboard fade-in">
         <div class="container">
-            <h2>Our Services</h2>
-            <div class="card-grid">
-                <div class="card">
+            <h2>Cyber Threat Dashboard</h2>
+            <div class="dashboard-content">
+                <div class="stat-card">
                     <i class="fas fa-shield-alt"></i>
-                    <h3>Cyber Defense</h3>
-                    <p>Advanced operations to counter cyber threats.</p>
+                    <h3>Active Threats</h3>
+                    <p id="active-threats">47</p>
                 </div>
-                <div class="card">
-                    <i class="fas fa-brain"></i>
-                    <h3>Threat Intelligence</h3>
-                    <p>Real-time analysis and threat monitoring worldwide.</p>
+                <div class="stat-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Global Incidents</h3>
+                    <p id="global-incidents">128</p>
                 </div>
-                <div class="card">
-                    <i class="fas fa-network-wired"></i>
-                    <h3>Network Security</h3>
-                    <p>Protecting vital infrastructures with advanced tech.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="products" class="section fade-in">
-        <div class="container">
-            <h2>Our Products</h2>
-            <div class="card-grid">
-                <div class="card">
-                    <h3>AI Surveillance Systems</h3>
-                    <p>Next-gen surveillance powered by AI for national security.</p>
-                </div>
-                <div class="card">
-                    <h3>Encryption Tools</h3>
-                    <p>Military-grade encryption for critical data protection.</p>
-                </div>
-                <div class="card">
-                    <h3>Penetration Testing Kits</h3>
-                    <p>Identify vulnerabilities before hackers exploit them.</p>
+                <div class="stat-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Systems Secured</h3>
+                    <p id="systems-secured">99.8%</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section fade-in">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form action="https://formspree.io/f/{your-form-id}" method="POST" class="contact-form" id="contactForm">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn-primary">Send Message</button>
-            </form>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container footer-content">
-            <p>&copy; 2025 National Cyber Intelligence Agency. All Rights Reserved.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
+            <div class="footer-logo">
+                <img src="images/ncia-logo.png" alt="NCIA Logo" class="logo-img">
+                <p>National Cyber Intelligence Agency</p>
             </div>
+            <div class="social-icons">
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/LoicManga" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2025 National Cyber Intelligence Agency. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
