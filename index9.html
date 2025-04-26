@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Login to the National Cyber Intelligence Agency portal">
+  <meta name="keywords" content="NCIA, cybersecurity, login">
+  <meta name="author" content="NCIA">
+  <title>NCIA Login</title>
+  <link rel="stylesheet" href="login-style.css">
+  <link rel="icon" href="/images/NewNCIA2.jpg" type="image/png">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="logo">
+        <img src="/images/NEW-NCIA.png" alt="NCIA Logo" width="40" height="40">
+        <span class="logo-text">NCIA</span>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index2.html">About</a></li>
+        <li><a href="index3.html">Services</a></li>
+        <li><a href="index4.html">Products</a></li>
+        <li><a href="index5.html">Careers</a></li>
+        <li><a href="index6.html">Reports</a></li>
+        <li><a href="index7.html">Dashboard</a></li>
+        <li><a href="index8.html">Contact</a></li>
+        <li><a href="index9.html" aria-current="page" class="login-btn">Login</a></li>
+      </ul>
+  
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" role="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title" class="animate-on-scroll">Secure Login</h1>
+        <p class="animate-on-scroll">Access the NCIA Portal</p>
+        <a href="#login-form" class="btn primary-btn animate-on-scroll">Login Now</a>
+      </div>
+    </section>
+
+    <!-- Login Section -->
+    <section class="login" aria-labelledby="login-title">
+      <h2 id="login-title" class="section-title animate-on-scroll">Login to Your Account</h2>
+      <form id="login-form" class="login-form animate-on-scroll">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Your Password" required>
+          <div class="password-strength">
+            <span>Strength:</span>
+            <div id="strength-meter"></div>
+          </div>
+        </div>
+        <button type="submit" class="btn primary-btn">Login</button>
+        <p class="form-error" style="display: none;"></p>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+      </form>
+
+      <form class="login-form animate-on-scroll">
+        <input type="text" name="username" placeholder="Username" required>
+        <div class="password-field">
+          <input type="password" name="password" placeholder="Password" required>
+          <button type="button" class="toggle-password">👁️</button>
+        </div>
+        <div class="strength-meter">
+          <div class="strength-bar"></div>
+          <p class="strength-text"></p>
+        </div>
+        <input type="text" name="mfa" placeholder="MFA Code">
+        <label><input type="checkbox" name="remember"> Remember Me</label>
+        <button type="submit" class="btn">Login</button>
+      </form>
+
+      <!-- Additional Containers -->
+      <div class="additional-container animate-on-scroll">
+        <h3>Account Security</h3>
+        <p>Learn about our multi-factor authentication options.</p>
+        <img src="/images/placeholder.jpg" alt="Security" class="additional-image">
+      </div>
+      <div class="additional-container animate-on-scroll">
+        <h3>Register</h3>
+        <p>Create a new account to access the portal.</p>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <h2 id="cta-title" class="section-title animate-on-scroll">Need Assistance?</h2>
+      <p class="animate-on-scroll">Contact our support team for help with your account.</p>
+      <a href="/pages/contact/index.html" class="btn primary-btn animate-on-scroll">Get Support</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <p>© 2025 NCIA. All Rights Reserved.</p>
+      <ul class="footer-links">
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms of Service</a></li>
+        <li><a href="/pages/contact/index.html">Contact Us</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="#" aria-label="Twitter"><img src="/assets/icons/twitter.svg" alt="Twitter Icon" class="social-icon"></a>
+        <a href="#" aria-label="LinkedIn"><img src="/assets/icons/linkedin.svg" alt="LinkedIn Icon" class="social-icon"></a>
+        <a href="#" aria-label="Email"><img src="/assets/icons/email.svg" alt="Email Icon" class="social-icon"></a>
+      </div>
+      <form class="newsletter-form">
+        <label for="email" class="sr-only">Email for Newsletter</label>
+        <input type="email" id="email" name="email" placeholder="Subscribe to our newsletter" required>
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+
+  <!-- Background SVG -->
+  <svg id="cyber-grid" aria-hidden="true" preserveAspectRatio="none">
+    <defs>
+      <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+        <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(0, 212, 255, 0.2)" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <g class="nodes"></g>
+  </svg>
+
+  <script src="login/Login-script.js"></script>
+</body>
+</html>

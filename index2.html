@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About the National Cyber Intelligence Agency - Our Mission, History, and Values">
+  <meta name="keywords" content="NCIA, cybersecurity, intelligence, about">
+  <meta name="author" content="NCIA">
+  <title>About NCIA</title>
+  <link rel="stylesheet" href="about-style.css">
+  <link rel="icon" href="/images/NewNCIA2.jpg" type="image/png">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="logo">
+        <img src="/images/NEW-NCIA.png" alt="NCIA Logo" width="40" height="40">
+        <span class="logo-text">NCIA</span>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index2.html"aria-current="page">About</a></li>
+        <li><a href="index3.html">Services</a></li>
+        <li><a href="index4.html">Products</a></li>
+        <li><a href="index5.html">Careers</a></li>
+        <li><a href="index6.html">Reports</a></li>
+        <li><a href="index7.html">Dashboard</a></li>
+        <li><a href="index8.html">Contact</a></li>
+        <li><a href="index9.html" class="login-btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" role="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title" class="animate-on-scroll">About NCIA</h1>
+        <p class="animate-on-scroll">Leading the Fight Against Cyber Threats with Innovation and Expertise</p>
+        <a href="#mission" class="btn primary-btn animate-on-scroll">Our Mission</a>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission" aria-labelledby="mission-title">
+      <h2 id="mission-title" class="section-title animate-on-scroll">Our Mission</h2>
+      <div class="mission-content animate-on-scroll">
+        <p>We are dedicated to protecting national security through advanced cybersecurity solutions, real-time intelligence, and global collaboration.</p>
+        <img src="/images/mission.jpg" alt="Mission Image" class="mission-image">
+      </div>
+    </section>
+
+    <!-- History Timeline -->
+    <section class="timeline" aria-labelledby="timeline-title">
+      <h2 id="timeline-title" class="section-title animate-on-scroll">Our History</h2>
+      <div class="timeline-container">
+        <div class="timeline-item animate-on-scroll">
+          <h3>2010</h3>
+          <p>NCIA Founded to Address Rising Cyber Threats</p>
+        </div>
+        <div class="timeline-item animate-on-scroll">
+          <h3>2015</h3>
+          <p>Launched CyberShield Platform</p>
+        </div>
+        <div class="timeline-item animate-on-scroll">
+          <h3>2020</h3>
+          <p>Expanded Global Partnerships</p>
+        </div>
+      </div>
+      <!-- Additional Containers -->
+      <div class="additional-container animate-on-scroll">
+        <h3>Leadership Team</h3>
+        <p>Add bios, photos, or details about leadership here.</p>
+        <img src="/images/placeholder.jpg" alt="Placeholder Image" class="additional-image">
+      </div>
+      <div class="additional-container animate-on-scroll">
+        <h3>Our Values</h3>
+        <p>Insert core values or mission statements as needed.</p>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <h2 id="cta-title" class="section-title animate-on-scroll">Learn More About Us</h2>
+      <p class="animate-on-scroll">Discover our services and how we can protect your organization.</p>
+      <a href="/pages/services/index.html" class="btn primary-btn animate-on-scroll">Explore Services</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <p>© 2025 NCIA. All Rights Reserved.</p>
+      <ul class="footer-links">
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms of Service</a></li>
+        <li><a href="/pages/contact/index.html">Contact Us</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Email">Email</a>
+      </div>
+      <form class="newsletter-form">
+        <label for="email" class="sr-only">Email for Newsletter</label>
+        <input type="email" id="email" name="email" placeholder="Subscribe to our newsletter" required>
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+
+  <!-- Background SVG -->
+  <svg id="cyber-grid" aria-hidden="true" preserveAspectRatio="none">
+    <defs>
+      <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+        <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(0, 212, 255, 0.2)" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <g class="nodes"></g>
+  </svg>
+
+  <script src="about/about-script.js"></script>
+</body>
+</html>

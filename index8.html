@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact the National Cyber Intelligence Agency for inquiries and support">
+  <meta name="keywords" content="NCIA, cybersecurity, contact">
+  <meta name="author" content="NCIA">
+  <title>NCIA Contact</title>
+  <link rel="stylesheet" href="contact-style.css">
+  <link rel="icon" href="/images/NewNCIA2.jpg" type="image/png">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="logo">
+        <img src="/images/NEW-NCIA.png" alt="NCIA Logo" width="40" height="40">
+        <span class="logo-text">NCIA</span>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index2.html">About</a></li>
+        <li><a href="index3.html">Services</a></li>
+        <li><a href="index4.html">Products</a></li>
+        <li><a href="index5.html">Careers</a></li>
+        <li><a href="index6.html">Reports</a></li>
+        <li><a href="index7.html">Dashboard</a></li>
+        <li><a href="index8.html" aria-current="page">Contact</a></li>
+        <li><a href="index9.html" class="login-btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" role="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title" class="animate-on-scroll">Contact Us</h1>
+        <p class="animate-on-scroll">Get in Touch with NCIA</p>
+        <a href="#contact-form" class="btn primary-btn animate-on-scroll">Send a Message</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section-title animate-on-scroll">Reach Out</h2>
+      <form id="contact-form" class="contact-form animate-on-scroll">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="btn primary-btn">Submit</button>
+        <p class="form-error" style="display: none;"></p>
+      </form>
+      <!-- Additional Containers -->
+      <div class="additional-container animate-on-scroll">
+        <h3>Contact Information</h3>
+        <p>Email: <a href="mailto:info@ncia.gov">info@ncia.gov</a></p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Secure Lane, Washington, DC</p>
+      </div>
+      <div class="additional-container animate-on-scroll">
+        <h3>Support Hours</h3>
+        <p>Monday - Friday: 9 AM - 5 PM</p>
+        <img src="/images/placeholder.jpg" alt="Support Team" class="additional-image">
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <h2 id="cta-title" class="section-title animate-on-scroll">Need Immediate Assistance?</h2>
+      <p class="animate-on-scroll">Contact our support team for urgent inquiries.</p>
+      <a href="mailto:support@ncia.gov" class="btn primary-btn animate-on-scroll">Email Support</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <p>© 2025 NCIA. All Rights Reserved.</p>
+      <ul class="footer-links">
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms of Service</a></li>
+        <li><a href="/pages/contact/index.html">Contact Us</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="#" aria-label="Twitter"><img src="/assets/icons/twitter.svg" alt="Twitter Icon" class="social-icon"></a>
+        <a href="#" aria-label="LinkedIn"><img src="/assets/icons/linkedin.svg" alt="LinkedIn Icon" class="social-icon"></a>
+        <a href="#" aria-label="Email"><img src="/assets/icons/email.svg" alt="Email Icon" class="social-icon"></a>
+      </div>
+      <form class="newsletter-form">
+        <label for="email" class="sr-only">Email for Newsletter</label>
+        <input type="email" id="email" name="email" placeholder="Subscribe to our newsletter" required>
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+
+  <!-- Background SVG -->
+  <svg id="cyber-grid" aria-hidden="true" preserveAspectRatio="none">
+    <defs>
+      <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+        <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(0, 212, 255, 0.2)" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <g class="nodes"></g>
+  </svg>
+
+  <script src="contact/Contact-script.js"></script>
+</body>
+</html>
+
+
+<form class="contact-form animate-on-scroll">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="subject" placeholder="Subject" required>
+    <textarea name="message" placeholder="Message" required></textarea>
+    <button type="submit" class="btn">Send</button>
+    <p class="form-error" style="display: none;"></p>
+  </form>

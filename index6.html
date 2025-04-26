@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Intelligence Reports by the National Cyber Intelligence Agency - Latest Cybersecurity Insights">
+  <meta name="keywords" content="NCIA, cybersecurity, intelligence reports">
+  <meta name="author" content="NCIA">
+  <title>NCIA Intelligence Reports</title>
+  <link rel="stylesheet" href="int-style.css">
+  <link rel="icon" href="/images/NewNCIA2.jpg" type="image/png">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="logo">
+        <img src="/images/NEW-NCIA.png" alt="NCIA Logo" width="40" height="40">
+        <span class="logo-text">NCIA</span>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index2.html">About</a></li>
+        <li><a href="index3.html">Services</a></li>
+        <li><a href="index4.html">Products</a></li>
+        <li><a href="index5.html">Careers</a></li>
+        <li><a href="index6.html" aria-current="page">Reports</a></li>
+        <li><a href="index7.html">Dashboard</a></li>
+        <li><a href="index8.html">Contact</a></li>
+        <li><a href="index9.html" class="login-btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" role="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title" class="animate-on-scroll">Intelligence Reports</h1>
+        <p class="animate-on-scroll">Latest Insights on Cybersecurity Threats</p>
+        <a href="#reports" class="btn primary-btn animate-on-scroll">View Reports</a>
+      </div>
+    </section>
+
+    <!-- Reports Section -->
+    <section class="reports" aria-labelledby="reports-title">
+      <h2 id="reports-title" class="section-title animate-on-scroll">Our Reports</h2>
+      <div class="search-filter animate-on-scroll">
+        <input type="text" id="report-search" placeholder="Search reports...">
+        <select id="report-category">
+          <option value="all">All Categories</option>
+          <option value="malware">Malware</option>
+          <option value="phishing">Phishing</option>
+          <option value="ddos">DDoS</option>
+        </select>
+      </div>
+      <div class="reports-container">
+        <div class="report-card animate-on-scroll" data-category="malware">
+          <h3>Malware Threat Report</h3>
+          <p><strong>Date:</strong> 2025-04-01 | <strong>Category:</strong> Malware</p>
+          <p>Analysis of recent malware trends and mitigation strategies.</p>
+        </div>
+        <div class="report-card animate-on-scroll" data-category="phishing">
+          <h3>Phishing Campaign Analysis</h3>
+          <p><strong>Date:</strong> 2025-03-15 | <strong>Category:</strong> Phishing</p>
+          <p>Insights into recent phishing campaigns targeting enterprises.</p>
+        </div>
+        <div class="report-card animate-on-scroll" data-category="ddos">
+          <h3>DDoS Attack Trends</h3>
+          <p><strong>Date:</strong> 2025-02-20 | <strong>Category:</strong> DDoS</p>
+          <p>Overview of distributed denial-of-service attack patterns.</p>
+        </div>
+      </div>
+      <!-- Additional Containers -->
+      <div class="additional-container animate-on-scroll">
+        <h3>Featured Report</h3>
+        <p>Highlight our latest in-depth analysis here.</p>
+        <img src="/images/placeholder.jpg" alt="Featured Report" class="additional-image">
+      </div>
+      <div class="additional-container animate-on-scroll">
+        <h3>Analytics Dashboard</h3>
+        <p>Access our interactive threat analytics via the dashboard.</p>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <h2 id="cta-title" class="section-title animate-on-scroll">Stay Informed</h2>
+      <p class="animate-on-scroll">Explore our threat dashboard for real-time data.</p>
+      <a href="/pages/threat-dashboard/index.html" class="btn primary-btn animate-on-scroll">View Dashboard</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <p>© 2025 NCIA. All Rights Reserved.</p>
+      <ul class="footer-links">
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms of Service</a></li>
+        <li><a href="/pages/contact/index.html">Contact Us</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="#" aria-label="Twitter"><img src="/assets/icons/twitter.svg" alt="Twitter Icon" class="social-icon"></a>
+        <a href="#" aria-label="LinkedIn"><img src="/assets/icons/linkedin.svg" alt="LinkedIn Icon" class="social-icon"></a>
+        <a href="#" aria-label="Email"><img src="/assets/icons/email.svg" alt="Email Icon" class="social-icon"></a>
+      </div>
+      <form class="newsletter-form">
+        <label for="email" class="sr-only">Email for Newsletter</label>
+        <input type="email" id="email" name="email" placeholder="Subscribe to our newsletter" required>
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+
+  <!-- Background SVG -->
+  <svg id="cyber-grid" aria-hidden="true" preserveAspectRatio="none">
+    <defs>
+      <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+        <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(0, 212, 255, 0.2)" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <g class="nodes"></g>
+  </svg>
+
+  <script src="intelligence-reports/Int-script.js"></script>
+</body>
+</html>

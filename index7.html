@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cyber Threat Dashboard by the National Cyber Intelligence Agency - Real-Time Threat Insights">
+  <meta name="keywords" content="NCIA, cybersecurity, threat dashboard, intelligence">
+  <meta name="author" content="NCIA">
+  <title>NCIA Cyber Threat Dashboard</title>
+  <link rel="stylesheet" href="dashboard-style.css">
+  <link rel="icon" href="/images/NewNCIA2.jpg" type="image/png">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="logo">
+        <img src="/images/NEW-NCIA.png" alt="NCIA Logo" width="40" height="40">
+        <span class="logo-text">NCIA</span>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index2.html">About</a></li>
+        <li><a href="index3.html">Services</a></li>
+        <li><a href="index4.html">Products</a></li>
+        <li><a href="index5.html">Careers</a></li>
+        <li><a href="index6.html">Reports</a></li>
+        <li><a href="index7.html" aria-current="page">Dashboard</a></li>
+        <li><a href="index8.html">Contact</a></li>
+        <li><a href="index9.html" class="login-btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" role="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title" class="animate-on-scroll">Cyber Threat Dashboard</h1>
+        <p class="animate-on-scroll">Real-Time Insights into Global Cyber Threats</p>
+        <a href="#dashboard" class="btn primary-btn animate-on-scroll">View Dashboard</a>
+      </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard" aria-labelledby="dashboard-title">
+      <h2 id="dashboard-title" class="section-title animate-on-scroll">Threat Analytics</h2>
+      <div class="filters animate-on-scroll">
+        <label for="time-range">Time Range:</label>
+        <select id="time-range" name="time-range">
+          <option value="24h">Last 24 Hours</option>
+          <option value="7d">Last 7 Days</option>
+          <option value="30d">Last 30 Days</option>
+        </select>
+        <label for="threat-type">Threat Type:</label>
+        <select id="threat-type" name="threat-type">
+          <option value="all">All</option>
+          <option value="malware">Malware</option>
+          <option value="phishing">Phishing</option>
+          <option value="ddos">DDoS</option>
+        </select>
+      </div>
+      <div class="charts-container">
+        <!-- Line Chart: Threat Trends -->
+        <div class="chart animate-on-scroll" id="threat-trends">
+          <h3>Threat Trends</h3>
+          <svg class="chart-svg" viewBox="0 0 400 200"></svg>
+        </div>
+        <!-- Pie Chart: Attack Types -->
+        <div class="chart animate-on-scroll" id="attack-types">
+          <h3>Attack Types</h3>
+          <svg class="chart-svg" viewBox="0 0 200 200"></svg>
+        </div>
+        <!-- Bar Chart: Regions -->
+        <div class="chart animate-on-scroll" id="regions">
+          <h3>Regions Affected</h3>
+          <svg class="chart-svg" viewBox="0 0 400 200"></svg>
+        </div>
+      </div>
+      <!-- Additional Containers -->
+      <div class="additional-container animate-on-scroll">
+        <h3>Custom Widget</h3>
+        <p>Add custom data visualizations or insights here.</p>
+        <img src="/images/placeholder.jpg" alt="Placeholder Image" class="additional-image">
+      </div>
+      <div class="additional-container animate-on-scroll">
+        <h3>Threat Summary</h3>
+        <p>Insert detailed threat analysis or reports as needed.</p>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <h2 id="cta-title" class="section-title animate-on-scroll">Stay Informed</h2>
+      <p class="animate-on-scroll">Access our intelligence reports for deeper insights.</p>
+      <a href="/pages/intelligence-reports/index.html" class="btn primary-btn animate-on-scroll">View Reports</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <p>© 2025 NCIA. All Rights Reserved.</p>
+      <ul class="footer-links">
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms of Service</a></li>
+        <li><a href="/pages/contact/index.html">Contact Us</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Email">Email</a>
+      </div>
+      <form class="newsletter-form">
+        <label for="email" class="sr-only">Email for Newsletter</label>
+        <input type="email" id="email" name="email" placeholder="Subscribe to our newsletter" required>
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+
+  <!-- Background SVG -->
+  <svg id="cyber-grid" aria-hidden="true" preserveAspectRatio="none">
+    <defs>
+      <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+        <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(0, 212, 255, 0.2)" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <g class="nodes"></g>
+  </svg>
+
+  <script src="threat-dashboard/Threat-script.js"></script>
+</body>
+</html>

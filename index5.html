@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Careers at the National Cyber Intelligence Agency - Join our mission to secure the nation">
+  <meta name="keywords" content="NCIA, cybersecurity, careers, jobs">
+  <meta name="author" content="NCIA">
+  <title>NCIA Careers</title>
+  <link rel="stylesheet" href="carrer-style.css">
+  <link rel="icon" href="/images/NewNCIA2.jpg" type="image/png">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="logo">
+        <img src="/images/NEW-NCIA.png" alt="NCIA Logo" width="40" height="40">
+        <span class="logo-text">NCIA</span>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index2.html">About</a></li>
+        <li><a href="index3.html">Services</a></li>
+        <li><a href="index4.html">Products</a></li>
+        <li><a href="index5.html" aria-current="page">Careers</a></li>
+        <li><a href="index6.html">Reports</a></li>
+        <li><a href="index7.html">Dashboard</a></li>
+        <li><a href="index8.html">Contact</a></li>
+        <li><a href="index9.html" class="login-btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" role="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title" class="animate-on-scroll">Join NCIA</h1>
+        <p class="animate-on-scroll">Be Part of Our Mission to Secure the Nation</p>
+        <a href="#careers" class="btn primary-btn animate-on-scroll">View Openings</a>
+      </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section class="careers" aria-labelledby="careers-title">
+      <h2 id="careers-title" class="section-title animate-on-scroll">Career Opportunities</h2>
+      <div class="job-filter animate-on-scroll">
+        <label for="department">Filter by Department:</label>
+        <select id="department">
+          <option value="all">All</option>
+          <option value="analyst">Analyst</option>
+          <option value="engineer">Engineer</option>
+          <option value="operations">Operations</option>
+        </select>
+      </div>
+      <div class="jobs-container">
+        <div class="job-listing animate-on-scroll" data-department="analyst">
+          <h3>Cyber Analyst</h3>
+          <p>Analyze and respond to cyber threats in real-time.</p>
+          <p><strong>Department:</strong> Analyst</p>
+        </div>
+        <div class="job-listing animate-on-scroll" data-department="engineer">
+          <h3>Security Engineer</h3>
+          <p>Design and implement secure systems for national defense.</p>
+          <p><strong>Department:</strong> Engineer</p>
+        </div>
+        <div class="job-listing animate-on-scroll" data-department="operations">
+          <h3>Operations Specialist</h3>
+          <p>Coordinate incident response and operations.</p>
+          <p><strong>Department:</strong> Operations</p>
+        </div>
+      </div>
+      <!-- Application Form -->
+      <form class="application-form animate-on-scroll">
+        <h3>Apply Now</h3>
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="file" name="resume" accept=".pdf" required>
+        <button type="submit" class="btn">Apply</button>
+        <p class="form-error" style="display: none;"></p>
+      </form>
+      <!-- Additional Containers -->
+      <div class="additional-container animate-on-scroll">
+        <h3>Employee Testimonials</h3>
+        <p>Hear from our team about working at NCIA.</p>
+        <img src="/images/placeholder.jpg" alt="Testimonials" class="additional-image">
+      </div>
+      <div class="additional-container animate-on-scroll">
+        <h3>Benefits</h3>
+        <p>Explore our competitive benefits and career growth opportunities.</p>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <h2 id="cta-title" class="section-title animate-on-scroll">Make a Difference</h2>
+      <p class="animate-on-scroll">Join our team to protect national security.</p>
+      <a href="#careers" class="btn primary-btn animate-on-scroll">Apply Today</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <p>© 2025 NCIA. All Rights Reserved.</p>
+      <ul class="footer-links">
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms of Service</a></li>
+        <li><a href="/pages/contact/index.html">Contact Us</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="#" aria-label="Twitter"><img src="/assets/icons/twitter.svg" alt="Twitter Icon" class="social-icon"></a>
+        <a href="#" aria-label="LinkedIn"><img src="/assets/icons/linkedin.svg" alt="LinkedIn Icon" class="social-icon"></a>
+        <a href="#" aria-label="Email"><img src="/assets/icons/email.svg" alt="Email Icon" class="social-icon"></a>
+      </div>
+      <form class="newsletter-form">
+        <label for="email" class="sr-only">Email for Newsletter</label>
+        <input type="email" id="email" name="email" placeholder="Subscribe to our newsletter" required>
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+
+  <!-- Background SVG -->
+  <svg id="cyber-grid" aria-hidden="true" preserveAspectRatio="none">
+    <defs>
+      <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+        <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(0, 212, 255, 0.2)" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <g class="nodes"></g>
+  </svg>
+
+  <script src="careers/Careers-script.js"></script>
+</body>
+</html>
